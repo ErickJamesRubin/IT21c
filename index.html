@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Classes</title>
+</head>
+<body>
+    <h1 style="text-align: center;">This is a simple personal information about myself</h1>
+    <br>
+    <h1 id="person1-name"></h1>
+    <h1 id="person1-age"></h1>
+    <h1 id="person1-occupation"></h1>
+    <h1 id="person1-motto"></h1>
+    <h1 id="person1-healthstatus"></h1>
+
+
+    <script>
+        //input
+        const person1 = {
+            name : "Erick James P. Rubin",
+            age : 19,
+            occupation : "Current student taking BSIT at Northern Bukidnon State College",
+            motto : "My motto in life is every mistake could be a lesson, the more you get mistake, the more you gain knowledge",
+            healthstatus : "VERY STRONGLY EXCELLENT"
+        }
+
+        //process and output
+
+        //solution 1 : display via console.log
+        console.log("Name: " + person1.name);
+        console.log("Age: " + person1.age);
+        console.log("Occupation: " + person1.occupation);
+        console.log("Motto: " + person1.motto);
+        console.log("Health-Status: " + person1.healthstatus);
+
+        //solution 2 : display via HTML
+        document.getElementById("person1-name").innerHTML = "Name: " + person1.name;
+        document.getElementById("person1-age").innerHTML = "Age: " + person1.age;
+        document.getElementById("person1-occupation").innerHTML = "Occupation: " + person1.occupation;
+        document.getElementById("person1-motto").innerHTML = "Motto: " + person1.motto;
+        document.getElementById("person1-healthstatus").innerHTML = "Health-Status: " + person1.healthstatus;
+
+    </script>
+</body>
+</html>
