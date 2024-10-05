@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LO2 - Methods</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>LO2 - Methods</h1>
+    <h1 id="personOne"></h1>
+    <script>
+        
+        // Class definition
+        class Person {
+            constructor(name, age, occupation, motto, healthstatus) {
+                this.name = name;
+                this.age = age;
+                this.occupation = occupation;
+                this.motto = motto;
+                this.healthstatus = healthstatus;
+            }
+
+            // Method to display person information in the console
+            displayInfo() {
+                console.log("Name: " + this.name);
+                console.log("Age: " + this.age);
+                console.log("Occupation: " + this.occupation);
+                console.log("Motto:" + this.motto);
+                console.log("Health-Status: " + this.healthstatus);
+            }
+
+            // Method to display person information in the HTML
+            displayInfoHTML() {
+                const personElement = document.getElementById('personOne');
+                personElement.innerHTML = `
+                    <strong>Name:</strong> ${this.name}<br>
+                    <strong>Age:</strong> ${this.age}<br>
+                    <strong>Occupation:</strong> ${this.occupation}
+                    <strong>Motto:</strong> ${this.motto}
+                    <strong>Health-Status:</strong> ${this.healthstatus}
+                `;
+            }
+        }
+
+        // Creating an object (instance) of the Person class
+        const personOne = new Person('Erick James P. Rubin', 19, 'Tanawon lang kung mag work ta', 'To get the right person, be the right person first', 'it is still fine cause I live and you love');
+        
+        // Calling methods
+        personOne.displayInfo();       
+        personOne.displayInfoHTML(); 
+    </script>
+</body>
+</html>

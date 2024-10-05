@@ -49,7 +49,7 @@ class Person {
 }
 
 // creating an object (instance) of the Person class
-const personOne = new Person('Erick James P. Rubin', 19, 'Student', 'world shall know pain shinraa tensei', 'okay its fine');
+const personOne = new Person('Erick James P. Rubin', 19, 'Tanawon lang kung mag work ta', 'To get the right person, be the right person first', 'it is still fine cause I live and you love');
 
 // calling methods
 personOne.displayInfo();
