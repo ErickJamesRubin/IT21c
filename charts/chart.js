@@ -80,9 +80,9 @@ class BarChart extends ChartCreator {
             data: {
                 labels: this.chartData.labels,
                 datasets: [{
-                    label: '# of Votes',
+                    label: '# of people agreed',
                     data: this.chartData.data,
-                    borderWidth: 1
+                    borderWidth: 5
                 }]
             },
             options: {
